@@ -41,7 +41,8 @@ class App extends Component {
     console.log(notes);
     console.log(nIndex);
 
-    notes[nIndex].body = currentNote.body;
+    if(nIndex!==-1){
+      notes[nIndex].body = currentNote.body;}
 
     this.setState({notes: notes});
 
